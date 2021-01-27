@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+    <span>Wiriya</span>
+    <span class="flex-fill"></span>
+    <div class="d-flex align-items-center">
+        <button mat-button aria-label="Example icon-button with a heart icon">
+            <mat-icon>search</mat-icon>
+        </button>
+        <div class="vl"></div>
+        <button mat-button aria-label="Example icon-button with a heart icon">
+            <mat-icon [matBadge]="mailnoti" matBadgeColor="warn">mail_outline</mat-icon>
+        </button>
+        <div class="vl"></div>
+        <button mat-button aria-label="Example icon-button with a heart icon">
+            <mat-icon [matBadge]="noti" matBadgeColor="warn">notifications_none</mat-icon>
+        </button>
+    </div>
+    <button mat-button [matMenuTriggerFor]="menu">
+        <img class="imguser rounded-circle bg-white" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png" alt="">
+        <span class="ml-2">admin jojo</span>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>dialpad</mat-icon>
+          <span>Redial</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>voicemail</mat-icon>
+          <span>Check voice mail</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Log out</span>
+        </button>
+    </mat-menu>
+  
+  
+  </mat-toolbar>

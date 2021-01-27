@@ -1,0 +1,12 @@
+.vl{
+    border: 1px solid #bfc3de;
+    margin: 0px 5px;
+    height: 20px;
+}
+
+.imguser{
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid #bfc3de;
+    object-fit: cover;
+}
