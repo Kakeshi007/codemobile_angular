@@ -1,4 +1,15 @@
-<app-header></app-header>
+
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" #sidenav opened="true">
+    <button mat-button>click</button>
+    <button mat-button>click</button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-header (navtoggle)="sidenav.toggle()" ></app-header>
+    <!-- <app-header (navtoggle)="sidenav.toggle()" (pass)="passalert($event)"></app-header> -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
 
 
@@ -10,9 +21,9 @@
     <p class="card-text">Text</p>
   </div>
 </div> -->
-
+<!-- 
 <div class="d-flex flex-row justify-content-around p-2 bd-highlight">
   <div style="background-color: red;">tttttt</div>
   <div style="background-color: blue;">ccccccc</div>
   <div style="background-color: black;">jjjjjjjj</div>
-</div>
+</div> -->

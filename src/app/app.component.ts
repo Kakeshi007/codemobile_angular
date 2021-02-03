@@ -11,4 +11,8 @@ export class AppComponent {
   name = 'wiriya';
 
   position = ['Admin', 'HR', 'IT'];
+
+  passalert(message: any){
+    console.log(message);
+  }
 }
