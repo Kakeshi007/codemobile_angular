@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 
 @Component({
@@ -7,13 +7,18 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+  @Input("media_query") mobileQueryMax: boolean;
+
   @Output() navtoggle = new EventEmitter();
   @Output() pass = new EventEmitter<string>();
 
   mailnoti = 50;
   noti = 5;
 
-  constructor() { }
+  constructor() { 
+    this.mobileQueryMax = true;
+  }
 
   ngOnInit(): void {
   }

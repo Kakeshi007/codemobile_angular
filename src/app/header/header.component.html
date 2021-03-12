@@ -2,7 +2,7 @@
     <button mat-button (click)="OnclickSidenavtoggle()">
         <mat-icon >menu</mat-icon>
     </button>
-    <span>Wiriya</span>
+    <span *ngIf="!mobileQueryMax">Wiriya</span>
     <span class="flex-fill"></span>
     <div class="d-flex align-items-center">
         <button mat-button aria-label="Example icon-button with a heart icon">
