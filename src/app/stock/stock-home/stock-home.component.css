@@ -53,5 +53,30 @@ td.mat-cell{
         min-width: 400px;
     }
 
-    
+    .search_form{
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 12px;
+    }
+
+    .search_form>.mat-form-field{
+        width: 100% !important; 
+        margin-bottom: 12px;
+    }
+}
+
+::ng-deep th.mat-column-price>.mat-sort-header-container{
+    justify-content: flex-end;
+}
+
+::ng-deep th.mat-column-image>.mat-sort-header-container{
+    justify-content: center;
+}
+
+::ng-deep .mat-sort-header-arrow{
+    color:black;
+}
+
+::ng-deep .mat-sort-header-sorted{
+    color:coral;
 }
